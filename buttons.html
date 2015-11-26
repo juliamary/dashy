@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Adventure time: Dashboard</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/adventure-time-theme.css" rel="stylesheet">
+    <link href="css/adventure-time-theme-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div id="container">
+      <!-- header con los tres componentes
+            *boton de sidebar
+            *el titulo
+            *boton logout
+      -->
+      <header class="header black-bg">
+
+        <!-- boton de sidebar -->
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars"></div>
+        </div>      
+        <!-- el titulo  -->
+        <a href="dashboard.html" class="logo">
+          <b class="hidden-xs">ADVENTURE TIME: DASHBOARD</b>
+          <b class="visible-xs">ADV.TIME</b>
+        </a>
+
+        <!-- boton logout -->
+        <ul class="nav pull-right top-menu">
+          <li>
+            <a class="logout" href="login.html">logout</a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- sidebar tiene 
+            * la boni su foto
+            * la lista con las opciones
+      -->
+      <div id="sidebar" class="nav-collapse">
+        <ul class="sidebar-menu">
+          
+          <div class="text-center">
+            <p>
+              <!-- le pongo un ancho en % para que varie dependiendo del tamano de la pantalla -->
+              <a href="profile.html"><img src="img/profile_avatar.png" width="30%"></a>
+            </p>
+            <!-- hay justo un css para #sidebar h5 que da el color blanco y el ancho necesario -->
+            <h5>Bonnibel Bubblegum</h5>
+          </div>
+
+          <!-- la lista del sidebar -->
+          <li class="sub-menu">
+            <a class="active" href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+          </li>
+          <li class="sub-menu">
+            <a href="buttons.html"><i class="fa fa-desktop"></i><span>buttons</span></a>
+          </li>
+
+          <li class="sub-menu">
+            <a href="progress.html"><i class="fa fa-desktop"></i><span>Progress bars</span></a>
+          </li>            
+          <li class="sub-menu">
+            <a href="form_component.html"><i class="fa fa-cogs"></i><span>Forms</span></a>
+          </li>      
+          <li class="sub-menu">
+            <a href="basic_tables.html"><i class="fa fa-th"></i><span>Data Tables</span></a>
+          </li> 
+          <li class="sub-menu">
+            <a href="gallery.html"><i class="fa fa-tasks"></i><span>Gallery</span></a>
+          </li>   
+
+          <li class="sub-menu">
+            <a href="login.html"><i class="fa fa-book"></i><span>Login Page</span></a>
+          </li>     
+          
+        </ul>
+      </div>
+
+
+<section id="main-content">
+  <div class="wrapper">
+    <div class="row mt">
+      
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        
+        <div class="showback">
+          <h4>
+            <i class="fa fa-chevron-right"></i> <!-- botones simplesss-->
+              Basic Buttons
+            </h4>
+          <!-- Botón normal -->
+              <button type="button" class="btn btn-default">Normal</button>
+                <!-- Muestra el botón de forma destacada para descubrir fácilmente
+                  el botón principal dentro de un grupo de botones -->
+                <button type="button" class="btn btn-primary">Desta</button>
+                   <!-- Indica una acción exitosa o positiva -->
+                  <button type="button" class="btn btn-success">Éxito</button>
+                    <!-- Botón pensado para los mensajes con alertas informativas -->
+                    <button type="button" class="btn btn-info">Informa</button>
+                   <!-- Indica que hay que tener cuidado con la acción asociada al botón -->
+                  <button type="button" class="btn btn-warning">Adverte</button> 
+                <!-- Indica una acción negativa o potencialmente peligrosa -->
+               <button type="button" class="btn btn-danger">Peligro</button>
+                <!-- Resta importancia al botón haciéndolo parecer un simple enlace,
+              aunque conserva tu comportamiento original de botón -->
+            <!-- <button type="button" class="btn btn-link">Enlace</button> -->
+        </div>
+      
+        <div class="showback">
+         <h4>
+            <i class="fa fa-chevron-right"></i> 
+              Buttons Round
+            </h4>
+          <!-- Botón normal -->
+              <button type="button" class="btn btn-default">Normal</button>
+                <!-- Muestra el botón de forma destacada para descubrir fácilmente
+                  el botón principal dentro de un grupo de botones -->
+                <button type="button" class="btn btn-primary">Desta</button>
+                   <!-- Indica una acción exitosa o positiva -->
+                  <button type="button" class="btn btn-success">Éxito</button>
+                    <!-- Botón pensado para los mensajes con alertas informativas -->
+                    <button type="button" class="btn btn-info">Informa</button>
+                   <!-- Indica que hay que tener cuidado con la acción asociada al botón -->
+                  <button type="button" class="btn btn-warning">Adverte</button> 
+                <!-- Indica una acción negativa o potencialmente peligrosa -->
+               <button type="button" class="btn btn-danger">Peligro</button>
+                <!-- Resta importancia al botón haciéndolo parecer un simple enlace,
+              aunque conserva tu comportamiento original de botón -->
+            <!-- <button type="button" class="btn btn-link">Enlace</button> -->
+        </div>
+         
+
+<div class="showback">
+          <h4>
+            <i class="fa fa-chevron-right"></i>
+              Theme Buttons
+                </h4>
+                 <!--  tema-1 -->
+                    <button type="button" class="btn btn-theme">Theme</button>
+                  <!-- tema-2 -->
+                <button type="button" class="btn btn-theme02">Theme02</button>
+              <!-- tema-3 -->
+            <button type="button" class="btn btn-theme03">Theme03</button>
+          <!-- tema-4 -->
+        <button type="button" class="btn btn-theme04">Theme04</button>
+            
+    </div>
+
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+              Button Group
+                </h4>
+                <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">Left</button>
+  <button type="button" class="btn btn-default">Middle</button>
+  <button type="button" class="btn btn-default">Right</button>
+                </div>
+</div>
+ 
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+              Button Nesting
+                </h4>
+                <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">1</button>
+  <button type="button" class="btn btn-default">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Dropdown link</a></li>
+      <li><a href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+               Split Buttons
+                </h4>
+                <!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Action</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+</div>
+
+</div>
+
+
+<div class="col-lg-6 col-md-6 col-sm-12">
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+                Buttons Sizes
+                </h4>
+              <p>
+  <button type="button" class="btn btn-primary btn-lg">Botón grande</button>
+  <button type="button" class="btn btn-default btn-lg">Botón grande</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary">Botón normal</button>
+  <button type="button" class="btn btn-default">Botón normal</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
+  <button type="button" class="btn btn-default btn-sm">Botón pequeño</button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-xs">Botón extra pequeño</button>
+  <button type="button" class="btn btn-default btn-xs">Botón extra pequeño</button>
+</p>
+</div>
+
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+              Block Buttons
+                </h4>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Botón de bloque</button>
+<button type="button" class="btn btn-default btn-lg btn-block">Botón de bloque</button>
+</div>
+
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+              Justified Buttons
+                </h4>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Left</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Middle</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default">Right</button>
+  </div>
+</div>
+</div>
+
+<div class="showback">
+    <h4>
+       <i class="fa fa-chevron-right"></i>
+              Dropdown Buttons
+                </h4>
+                <div class="btn-group">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+
+</div>
+
+<div class="showback">
+    <h4>
+            <i class="fa fa-chevron-right"></i>
+               Buttons With Icons
+                </h4>
+                <div class="btn-toolbar" role="toolbar">
+  <button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star"></span> Star
+  </button>
+ 
+  <button type="button" class="btn btn-default">
+    <span class="glyphicon glyphicon-star"></span> Star
+  </button>
+ 
+  <button type="button" class="btn btn-default btn-sm">
+    <span class="glyphicon glyphicon-star"></span> Star
+  </button>
+ 
+  <button type="button" class="btn btn-default btn-xs">
+    <span class="glyphicon glyphicon-star"></span> Star
+  </button>
+</div>
+</div>
+
+</div><!--segunda  columna-6 -->
+    
+
+
+    </div>
+  </div>  
+</section> 
+
+
+
+
+
+
+
+
+  <!--Inserta tu codigo aqui-->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common-scripts.js"></script>
+  </body>
+</html>

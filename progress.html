@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Adventure time: Dashboard</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/adventure-time-theme.css" rel="stylesheet">
+    <link href="css/adventure-time-theme-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div id="container">
+      <!-- header con los tres componentes
+            *boton de sidebar
+            *el titulo
+            *boton logout
+      -->
+      <header class="header black-bg">
+
+        <!-- boton de sidebar -->
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars"></div>
+        </div>      
+        <!-- el titulo  -->
+        <a href="dashboard.html" class="logo">
+          <b class="hidden-xs">ADVENTURE TIME: DASHBOARD</b>
+          <b class="visible-xs">ADV.TIME</b>
+        </a>
+
+        <!-- boton logout -->
+        <ul class="nav pull-right top-menu">
+          <li>
+            <a class="logout" href="login.html">logout</a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- sidebar tiene 
+            * la boni su foto
+            * la lista con las opciones
+      -->
+      <div id="sidebar" class="nav-collapse">
+        <ul class="sidebar-menu">
+          
+          <div class="text-center">
+            <p>
+              <!-- le pongo un ancho en % para que varie dependiendo del tamano de la pantalla -->
+              <a href="profile.html"><img src="img/profile_avatar.png" width="30%"></a>
+            </p>
+            <!-- hay justo un css para #sidebar h5 que da el color blanco y el ancho necesario -->
+            <h5>Bonnibel Bubblegum</h5>
+          </div>
+
+          <!-- la lista del sidebar -->
+          <li class="sub-menu">
+            <a class="active" href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+          </li>
+          <li class="sub-menu">
+            <a href="buttons.html"><i class="fa fa-desktop"></i><span>buttons</span></a>
+          </li>
+
+          <li class="sub-menu">
+            <a href="progress.html"><i class="fa fa-desktop"></i><span>Progress bars</span></a>
+          </li>            
+          <li class="sub-menu">
+            <a href="form_component.html"><i class="fa fa-cogs"></i><span>Forms</span></a>
+          </li>      
+          <li class="sub-menu">
+            <a href="basic_tables.html"><i class="fa fa-th"></i><span>Data Tables</span></a>
+          </li> 
+          <li class="sub-menu">
+            <a href="gallery.html"><i class="fa fa-tasks"></i><span>Gallery</span></a>
+          </li>   
+
+          <li class="sub-menu">
+            <a href="login.html"><i class="fa fa-book"></i><span>Login Page</span></a>
+          </li>     
+          
+        </ul>
+      </div>
+    <!--Inserta tu codigo aqui-->
+    <section id="main-content">
+        <div class="wrapper">
+          <h3><span class="fa fa-chevron-right"></span> Form Components</h3>
+          <div class="row">
+          
+          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="showback ">
+          <h4><span class="fa fa-chevron-right"></span> Basic Progress Bars</h4>
+          <div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>
+        </div>
+          
+        
+
+          
+          <div class="showback">
+<h4><span class="fa fa-chevron-right"></span>Stripped Progress Bars</h4>
+          <div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>        
+</div>
+
+
+          <div class="showback">
+          <h4><span class="fa fa-chevron-right"></span>Animated Progress Bars</h4>
+          <div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>        
+</div>
+
+
+
+          <div class="showback ">
+          <h4><span class="fa fa-chevron-right"></span>Stacked</h4>
+          <div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 35%">
+    <span class="sr-only">35% completado (éxito)</span>
+  </div>
+  <div class="progress-bar progress-bar-warning" style="width: 20%">
+    <span class="sr-only">20% completado (aviso)</span>
+  </div>
+  <div class="progress-bar progress-bar-danger" style="width: 10%">
+    <span class="sr-only">10% completado (peligro)</span>
+  </div>
+</div>        
+</div>
+
+
+          <div class="showback ">
+          <h4><span class="fa fa-chevron-right"></span>Gritter Examples</h4>
+          <p>Click on below buttons to check it out.</p>
+              <a id="add-regular" class="btn btn-default btn-sm" href="javascript:;">Regular</a>
+              <a id="add-sticky" class="btn btn-success  btn-sm" href="javascript:;">Sticky</a>
+              <a id="add-without-image" class="btn btn-info  btn-sm" href="javascript:;">Imageless</a>
+              <a id="add-gritter-light" class="btn btn-warning  btn-sm" href="javascript:;">Light</a>
+              <a id="remove-all" class="btn btn-danger  btn-sm" href="general.html#">Remove all</a>
+              </div>
+
+</div><!-- estas son el cierre de las 6 primeras columnas --> 
+
+
+<div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="showback ">
+          <h4><span class="fa fa-chevron-right"></span> Alerts Examples</h4>
+<div class="alert alert-success"><p><b>¡Bien hecho!</b> Has leído correctamente este mensaje tan importante.</p></div>
+<div class="alert alert-info"><p><b>¡Atento!</b> Este mensaje requiere de tu atención, aunque no es tan importante.</p></div>
+<div class="alert alert-warning"><b>¡Cuidado!</b> Es muy importante que leas este mensaje de alerta.</div>
+<div class="alert alert-danger"><b>¡Error!</b> Haz algunos cambios antes de volver a enviar el formulario</div></div>        
+
+          <div class="showback">
+          <h4><span class="fa fa-chevron-right"></span>Dismissable Alert</h4>
+          <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>¡Cuidado!</strong> Es muy importante que leas este mensaje de alerta.
+        </div></div>
+                         
+
+          <div class="showback">
+          <h4><span class="fa fa-chevron-right"></span>Badges</h4>
+          <span class="badge">5</span>
+            <span class="badge bg-primary">10</span>
+            <span class="badge bg-success">15</span>
+            <span class="badge bg-info">20</span>
+            <span class="badge bg-inverse">25</span>
+            <span class="badge bg-warning">30</span>
+            <span class="badge bg-important">35</span>         
+          </div>
+
+<div class="showback">
+          <h4><span class="fa fa-chevron-right"></span>Badges</h4>
+          <span class="label label-default">label</span>
+              <span class="label label-primary">Primary</span>
+              <span class="label label-success">Success</span>
+              <span class="label label-info">Info</span>
+              <span class="label label-warning">Warning</span>
+              <span class="label label-danger">Danger</span>         
+</div>
+
+</div><!-- cierre de la segundas seis columnas  -->
+
+
+
+
+
+
+        </div><!-- row unico -->
+        </div><!-- este es el cierre de la emboltura osea el wrapper -->
+    </section>
+
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common-scripts.js"></script>
+  </body>
+</html>

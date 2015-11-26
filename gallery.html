@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Adventure time: Dashboard</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/adventure-time-theme.css" rel="stylesheet">
+    <link href="css/adventure-time-theme-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <div id="container">
+      <!-- header con los tres componentes
+            *boton de sidebar
+            *el titulo
+            *boton logout
+      -->
+      <header class="header black-bg">
+
+        <!-- boton de sidebar -->
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars"></div>
+        </div>      
+        <!-- el titulo  -->
+        <a href="dashboard.html" class="logo">
+          <b class="hidden-xs">ADVENTURE TIME: DASHBOARD</b>
+          <b class="visible-xs">ADV.TIME</b>
+        </a>
+
+        <!-- boton logout -->
+        <ul class="nav pull-right top-menu">
+          <li>
+            <a class="logout" href="login.html">logout</a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- sidebar tiene 
+            * la boni su foto
+            * la lista con las opciones
+      -->
+      <div id="sidebar" class="nav-collapse">
+        <ul class="sidebar-menu">
+          
+          <div class="text-center">
+            <p>
+              <!-- le pongo un ancho en % para que varie dependiendo del tamano de la pantalla -->
+              <a href="profile.html"><img src="img/profile_avatar.png" width="30%"></a>
+            </p>
+            <!-- hay justo un css para #sidebar h5 que da el color blanco y el ancho necesario -->
+            <h5>Bonnibel Bubblegum</h5>
+          </div>
+
+          <!-- la lista del sidebar -->
+          <li class="sub-menu">
+            <a class="active" href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+          </li>
+          <li class="sub-menu">
+            <a href="buttons.html"><i class="fa fa-desktop"></i><span>buttons</span></a>
+          </li>
+
+          <li class="sub-menu">
+            <a href="progress.html"><i class="fa fa-desktop"></i><span>Progress bars</span></a>
+          </li>            
+          <li class="sub-menu">
+            <a href="form_component.html"><i class="fa fa-cogs"></i><span>Forms</span></a>
+          </li>      
+          <li class="sub-menu">
+            <a href="basic_tables.html"><i class="fa fa-th"></i><span>Data Tables</span></a>
+          </li> 
+          <li class="sub-menu">
+            <a href="gallery.html"><i class="fa fa-tasks"></i><span>Gallery</span></a>
+          </li>   
+
+          <li class="sub-menu">
+            <a href="login.html"><i class="fa fa-book"></i><span>Login Page</span></a>
+          </li>     
+          
+        </ul>
+      </div>
+
+
+      <!-- contenido importante -->
+      <section id="main-content">
+        <div class="wrapper site-min-height"><!-- emboltura -->
+          <h3><span class="fa fa-angle-right"></span> Gallery</h3><!-- icono -->
+          
+          <div class="row mt"><!-- primera linea de galerias -->
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port04.jpg"><img class="img-responsive" src="img/portfolio/port04.jpg" alt=""></a>
+                  </div>                 
+            </div><!-- desc -->
+
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port05.jpg"><img class="img-responsive" src="img/portfolio/port05.jpg" alt=""></a>
+                    </div>
+            </div><!-- desc -->
+
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <!-- <div class="project-wrapper"> -->
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port06.jpg"><img class="img-responsive" src="img/portfolio/port06.jpg" alt=""></a>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              
+          </div><!-- /primera linea de galerias-->
+
+          <div class="row mt"><!-- primera linea de galerias -->
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port04.jpg"><img class="img-responsive" src="img/portfolio/port04.jpg" alt=""></a>
+                  </div>                 
+            </div><!-- desc -->
+
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port05.jpg"><img class="img-responsive" src="img/portfolio/port05.jpg" alt=""></a>
+                    </div>
+            </div><!-- desc -->
+
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <!-- <div class="project-wrapper"> -->
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port06.jpg"><img class="img-responsive" src="img/portfolio/port06.jpg" alt=""></a>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              
+          </div><!-- /primera linea de galerias-->
+
+          <div class="row mt mb"><!-- primera linea de galerias -->
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port04.jpg"><img class="img-responsive" src="img/portfolio/port04.jpg" alt=""></a>
+                  </div>                 
+            </div><!-- desc -->
+
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port05.jpg"><img class="img-responsive" src="img/portfolio/port05.jpg" alt=""></a>
+                    </div>
+            </div><!-- desc -->
+
+            <div class="desc col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <!-- <div class="project-wrapper"> -->
+                  <div class="photo-wrapper">
+                      <a class="fancybox" href="img/portfolio/port06.jpg"><img class="img-responsive" src="img/portfolio/port06.jpg" alt=""></a>
+                    </div>
+                  <!-- </div> -->
+                </div>
+              
+          </div><!-- /primera linea de galerias-->
+
+         
+          
+
+          </section><!--/envoltura -->
+      </section><!-- /contenido principal -->
+  </section>
+  <!--Inserta tu codigo aqui-->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common-scripts.js"></script>
+  </body>
+</html>
+
+<!-- cajita para las cosillas -->

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Adventure time: Dashboard</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/adventure-time-theme.css" rel="stylesheet">
+    <link href="css/adventure-time-theme-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+<div id="container">
+      <!-- header con los tres componentes
+            *boton de sidebar
+            *el titulo
+            *boton logout
+      -->
+      <header class="header black-bg">
+
+        <!-- boton de sidebar -->
+        <div class="sidebar-toggle-box">
+            <div class="fa fa-bars"></div>
+        </div>      
+        <!-- el titulo  -->
+        <a href="dashboard.html" class="logo">
+          <b class="hidden-xs">ADVENTURE TIME: DASHBOARD</b>
+          <b class="visible-xs">ADV.TIME</b>
+        </a>
+
+        <!-- boton logout -->
+        <ul class="nav pull-right top-menu">
+          <li>
+            <a class="logout" href="login.html">logout</a>
+          </li>
+        </ul>
+      </header>
+
+      <!-- sidebar tiene 
+            * la boni su foto
+            * la lista con las opciones
+      -->
+      <div id="sidebar" class="nav-collapse">
+        <ul class="sidebar-menu">
+          
+          <div class="text-center">
+            <p>
+              <!-- le pongo un ancho en % para que varie dependiendo del tamano de la pantalla -->
+              <a href="profile.html"><img src="img/profile_avatar.png" width="30%"></a>
+            </p>
+            <!-- hay justo un css para #sidebar h5 que da el color blanco y el ancho necesario -->
+            <h5>Bonnibel Bubblegum</h5>
+          </div>
+
+          <!-- la lista del sidebar -->
+          <li class="sub-menu">
+            <a class="active" href="dashboard.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+          </li>
+          <li class="sub-menu">
+            <a href="buttons.html"><i class="fa fa-desktop"></i><span>buttons</span></a>
+          </li>
+
+          <li class="sub-menu">
+            <a href="progress.html"><i class="fa fa-desktop"></i><span>Progress bars</span></a>
+          </li>            
+          <li class="sub-menu">
+            <a href="form_component.html"><i class="fa fa-cogs"></i><span>Forms</span></a>
+          </li>      
+          <li class="sub-menu">
+            <a href="basic_tables.html"><i class="fa fa-th"></i><span>Data Tables</span></a>
+          </li> 
+          <li class="sub-menu">
+            <a href="gallery.html"><i class="fa fa-tasks"></i><span>Gallery</span></a>
+          </li>   
+
+          <li class="sub-menu">
+            <a href="login.html"><i class="fa fa-book"></i><span>Login Page</span></a>
+          </li>     
+          
+        </ul>
+      </div>
+      <!-- contenido de las cajas de input -->
+
+      <div id="main-content">
+        <div class="wrapper">
+          <h2><i class="fa fa-angle-right"></i> Form Components</h2>
+          
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- empieza el formulario con 
+
+                  .form-panel -> todo el formulario
+                  h3 -> subtitulo
+                  .form-horizontal -> el formulario en si, lo pongo como div, tambien se podria poner como <form>
+                  .form-group -> para cada caja de texto(input)
+                    cada form group esta compuesto de
+                      * .control-label -> tiene un sm-2 este label o etiqueta, es un texto que hace referencia al input
+                      * .form-control  -> tiene un sm-10 es el input en si, la cajita donde escribes(por defecto tendran type=text)
+                -->
+              <div class="form-panel">
+                <!-- subititulo -->
+                <h3><i class="fa fa-angle-right"></i> Form elements</h3>
+                
+                  <!-- el formulario en si, cada caja de texto tiene un label (etiqueta) -->
+                <div class="form-horizontal">
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Default</label>
+                    <div class="col-sm-10">
+                      <input class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Help text</label>
+                    <div class="col-sm-10">
+                      <input class="form-control">
+                      <span>A block of help text that breaks into a new line and may extend beyond one line</span>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Rounder</label>
+                    <div class="col-sm-10">
+                      <!-- con .round-form damos el efecto tipo border-radious, esquinas redondeadas -->
+                      <input class="form-control round-form">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Input focus</label>
+                    <div class="col-sm-10">
+                      <!-- como hacer focus? creo que se puede poner id="focusedInput" al input -->
+                      <input class="form-control" placeholder="This is focused...">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 col-sm-2 control-label">Disabled</label>
+                    <div class="col-sm-10">
+                      <!-- la propiedad disabled inhabilita el input, no se puede escribir y el puntero del mouse cambia -->
+                      <input class="form-control" placeholder="disabled input here..." disabled>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Placeholder</label>
+                    <div class="col-sm-10">
+                      <input class="form-control" placeholder="placeholder">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <!-- le ponemos el tipo password -->
+                      <input type="password" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label">static control</label>
+                    <div class="col-sm-10">
+                      <!-- no esta cuadrando-->
+                      <span>email@example.com</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>     
+          </div>
+          
+        </div>
+      </div>
+
+
+
+    </div>
+
+   <!--Inserta tu codigo aqui-->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common-scripts.js"></script>
+  </body>
+</html>
